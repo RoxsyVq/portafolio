@@ -15,11 +15,43 @@ color: #fff;
   color: #fff;
 }
 .navbar .navbar-toggle .icon-bar{
-  background: red;
+  background: #ccc;
 }
 .navbar button{
-border: 1px solid red;
+border: 1px solid #ccc;
 }
+nav{
+  width: 100%;
+
+}
+
+
+
+#main-navigation{
+	z-index: 1;
+	position: absolute;
+	right:   0px;
+	margin: 10px 0 0 0;
+
+}
+#main-navigation ul
+{
+	background: rgba(0,0,0,0.5);
+	list-style: none;
+	padding: 5px;
+	border-radius: 5px;
+
+}
+#main-navigation li a{
+  width: 100%;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+header .navbar-nav li a:hover{
+
+ 	background: rgba(255,255,255,0.4);
+
+ }
 
 /*-------------------main2*/
 .main2{
@@ -90,34 +122,46 @@ color:;
 }
 /*-----------------------------galleri*/
 .galeria .one{
-  background: 100% url(../img/1.jpg) no-repeat;
+  background:  url(../img/1.jpg) no-repeat;
   background-size: cover;
-  height:300px;
+  height:auto;
 }
 .galeria .two{
-  background: 100% url(../img/2.jpg) no-repeat;
+  background: url(../img/2.jpg) no-repeat;
   background-size: cover;
-  height:300px;
+    height:auto;
 }
 .galeria .three{
-  background: 100% url(../img/3.jpg) no-repeat;
+  background: url(../img/3.jpg) no-repeat;
   background-size: cover;
-  height:300px;
+    height:auto;
+}
+.galeria a:hover .texto {
+    -webkit-transform: scale(1,1);
+}
+.galeria .texto {
+    font-style: italic;
+    color: #fff;
+    padding: 40%;
+    background:rgba(204, 131, 45, 0.79);
+    position: relative;
+    -webkit-transform: scale(1,0);
+    -webkit-transition: all 0.5s ease-in-out;
 }
 .galeria .four{
   background: 100% url(../img/4.jpg) no-repeat;
   background-size: cover;
-  height:300px;
+    height:auto;
 }
 .galeria .five{
   background: 100% url(../img/5.jpg) no-repeat;
   background-size: cover;
-  height:300px;
+    height:auto;
 }
 .galeria .six{
   background: 100% url(../img/6.jpg) no-repeat;
   background-size: cover;
-  height:300px;
+    height:auto;
 }
 .mas{
   text-align: center;
@@ -144,4 +188,23 @@ color:;
   border: 1px solid  #f05f40;
   width: 30px;
 
+}
+@media screen and (max-width:768px)
+{
+  nav{
+background: rgba(255,255,255,0.5);
+  }
+  nav .navbar-brand{
+    color:#f05f40;
+    font-weight: bold;
+  }
+
+  .galeria .three{
+    background: url(../img/3.jpg) no-repeat;
+    background-size: cover;
+    height:300px;
+  }
+  .services i{
+    font-size: 500%;
+  }
 }
